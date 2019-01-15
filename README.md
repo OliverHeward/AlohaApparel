@@ -1,5 +1,5 @@
 # *Aloha Apparel*
-> This project is an E-Commerce website for a brand called Aloha. Within this website the core languages that are used are
+> This project is an E-Commerce website for a brand called Aloha.
 
 # *Technology Used*
 >* HTML
