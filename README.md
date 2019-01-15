@@ -3,9 +3,9 @@
 
 # *Technology Used*
 >* HTML
-* CSS
-* JavaScript
-* jQuery
+>* CSS
+>* JavaScript
+>* jQuery
 
 ## *Changelog*
 >* 15-Jan-2019 Initial Repo Push
