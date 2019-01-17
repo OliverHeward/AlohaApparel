@@ -15,6 +15,9 @@
 		<link rel="stylesheet" href="style.css" type="text/css" /> 
 	<!-- Font Awesome CDN -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+	<!-- Flickity CDN CSS -->
+		<link rel="stylesheet" href="flickity.css" type="text/css" />
 	</head>
 
 <!-- Body -->
@@ -24,15 +27,16 @@
 		<img class="logo" src="images/aloha-logo.svg">
 		<img class="cart" src="images/cart-icon.svg">
 		<nav class="main-nav">
-			<a href="#">About</a>
-			<a href="#">Shop</a>
-			<a href="#">Featured</a>
-			<a href="#">Updates</a>
+			<a data-scroll href="#about">About</a>
+			<a data-scroll href="#shop">Shop</a>
+			<a data-scroll href="#featured">Featured</a>
+			<a data-scroll href="#updates">Updates</a>
 		</nav>
 	</header>
 
 <!-- Hero Image -->
-	<section class="hero-image">
+<section>
+	<div class="hero-image" id="home">
 		<div class="hero-text">
 			<h3>New Collection</h3>
 			<h1>Spring/Summer <br>
@@ -42,20 +46,19 @@
 	</section>
 
 <!-- Bio Container -->
-	<section class="hero flex-center">
+	<section class="container" id="about">
 		<div class="bio-text">
 
 			<h2><em>Hand-Crafted</em> <strong>Styles</strong>
 			</h2>
-				<p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our <br>
+				<p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our
 				current selection of products or sign-up for updates below.
 			</p>
 		</div>
 	</section>
 
 <!-- FlexBox Container -->
-	<!-- Row One -->
-	<section class="container">
+	<section class="container" id="shop">
 		<div class="flexbox-gallery">
 			<div class="gallery-cell">Men's</div>
 			<div class="gallery-cell">Trends</div>
@@ -67,75 +70,71 @@
 	</section>
 
 <!-- Most-Loved Container -->
-	<section class="container">
-		<div class="most-loved">
-			<div class="carousel">
-			<h1>
-				<em>Most Loved</em> <strong>Products</strong>
-			</h1>
-				<ul>
-		         <li>
-		            <img src="images/stretch-knit-dress.jpg" alt="Image of stretch knit dress" />
-		            	<p class="item-category">Dresses</p>
-		            	<h3 class="item-name">Stretch Knit Dress</h3>
-		            	<p class="item-price">$169.00</p>
-		         </li>
+	<section class="container" id="featured">
+		<h1 class="most-loved"><em>Most-Loved </em> <strong>Products</strong></h1>
+		<div class="carousel" data-flickity>
+			  <div class="carousel-cell">
+			  	<img src="images/checked-stretch-dress.jpg" alt="Image of Checked Stretch Dress"/>
+			  	<p>Dresses</p>
+			  	<h3>Checked Stretch Dress</h3>
+				<p>$129.00</p>
+			  </div>
 
-		         <li>
-		            <img src="images/cotton-blue-shirt.jpg" alt="Image of cotton blue shirt" />
-		            	<p class="item-category">Shirts</p>
-		            	<h3 class="item-name">Cotton Blue Shirt</h3>
-		            	<p class="item-price">$89.00</p>
-		         </li>
+			  <div class="carousel-cell">
+			  	<img src="images/cotton-blue-shirt.jpg" alt="Image of cotton blue shirt" />
+			  	<p>Shirt</p>
+			  	<h3>Cotton Blue Shirt</h3>
+			  	<p>$89.00</p>
+			  </div>
 
-		         <li>
-		            <img src="images/checked-stretch-dress.jpg" alt="Image of checked stretch dress" />
-		            	<p class="item-category">Dresses</p>
-		            	<h3 class="item-name">Checked Stretch Dress</h3>
-		            	<p class="item-price">$129.00</p>
-		         </li>
+			  <div class="carousel-cell">
+			  	<img src="images/stretch-knit-dress.jpg" alt="Image of stretch knit dress" />
+			  	<p>Dresses</p>
+			  	<h3>Stretch Knit Dress</h3>
+			  	<p>$129.00</p>
+			  </div>
 
-		         <li>
-		            <img src="images/blue-hipster-backpack.jpg" alt="Image of blue hipster backpack" />
-		            	<p class="item-category">Bags</p>
-		            	<h3 class="item-name">Blue Hipster Backpack</h3>
-		            	<p class="item-price">$69.00</p>
-		         </li>
+			  <div class="carousel-cell">
+			  	<img src="images/blue-hipster-backpack.jpg" alt="Image of Blue Hipster Backpack" />
+			  	<p>Bags</p>
+			  	<h3>Blue Hipster Backpack</h3>
+			  	<p>$69.00</p>
+			  </div>
 
-		         <li>
-		         	<img src="images/demin-overall-shorts.jpg" alt="Image of demin overall shorts" />
-		         	<p class="item-category">Dresses</p>
-		         	<h3 class="item-name">Demin Overall Shorts</h3>
-		         	<p class="item-price">$100.00</p>
-		         </li>
+			  <div class="carousel-cell">
+			  	<img src="images/demin-overall-shorts.jpg" alt="Image of demin overall shorts" />
+			  	<p>Dresses<p>
+			  	<h3>Demin Overall Shorts</h3>
+			  	<p>$100.00</p>
+			  </div>
 
-		         <li>
-		         	<img src="images/cotton-yellow-tshirt.jpg" alt="Image of cotton yellow t-shirt" />
-		         	<p class="item-category">Shirts</p>
-		         	<h3 class="item-name">Cotton Yellow T-Shirt</h3>
-		         	<p class="item-price">$80.00</p>
-		         </li>
+			  <div class="carousel-cell">
+			  	<img src="images/cotton-yellow-tshirt.jpg" alt="Image of cotton yellow t-shirt" />
+			  	<p>Shirts</p>
+			  	<h3>Cotton Yellow T-Shirt</h3>
+			  	<p>$80.00</p>
+			  </div>
 
-		         <li>
-		         	<img src="images/pink-dotted-dress.jpg" alt="Image of pink dotted dress" />
-		         	<p class="item-category">Dresses</p>
-		         	<h3 class="item-name">Pink Dotted Dress</h3>
-		         	<p class="item-price">$129.00</p>
-		         </li>
+			  <div class="carousel-cell">
+			  	<img src="images/pink-dotted-dress.jpg" alt="Image of Pink Dotted Dress" />
+			  	<p>Dresses</p>
+			  	<h3>Pinked Dotted Dress</h3>
+			  	<p>$129.00</p>
+			  </div>
 
-		         <li>
-		         	<img src="images/blue-silk-dress.jpg" alt="Image of pink dotted dress" />
-		         	<p class="item-category">Dresses</p>
-		         	<h3 class="item-name">Blue Silk Dress</h3>
-		         	<p class="item-price">$149.00</p>
-		         </li>
-		      </ul>
+			  <div class="carousel-cell">
+			  	<img src="images/blue-silk-dress.jpg" alt="Image of Pink Dotted Dress" />
+			  	<p>Dresses</p>
+			  	<h3>Blue Silk Dress</h3>
+			  	<p>$149.00</p>
+			  </div>
+			</div>
 		</div>
 	</div>
 	</section>
 
 <!-- Sign Up Container -->
-	<section class="container">
+	<section class="container" id="updates">
 		<div class="sign-up">
 			<form>
 				<h2>
@@ -184,6 +183,20 @@
 			</div>
 </footer>
 	</section>
+		<!-- Smooth Scroll (that is that smooth) --> 
+		<script src="smoothscroll.js"></script>
+
+		<script src="carousel.js"></script>
+
+		<!-- Flickity JavaScript CDN -->
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+		<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+		<!-- Flickity jQuery CDN -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 </body>
 
 </html>

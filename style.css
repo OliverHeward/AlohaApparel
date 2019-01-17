@@ -102,29 +102,24 @@
 body, html {
 	height: 100%;
 	width: 100%;
+	position: relative;
+	scroll-behavior: smooth;
 }
 
 
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 /* Nav Area Container */
 
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-}
-
-.container {
-	width: 100%;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	list-style: none;
 }
 
 body {
 	font-family: 'Raleway-Light', Ariel, sans-serif;
-	margin: 0;
-	min-height: 100vh;
 	font-size: 0.875rem;
 	color: #2d2d2d;
 }
@@ -132,6 +127,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'PlayfairDisplay-Bold';
 	font-size: 1.275rem;
+
 
 }
 
@@ -141,7 +137,7 @@ p {
 	line-height: 1.6;
 }
 
-
+/* ----- NAV Section ----- */
 
 header {
 	position: fixed;
@@ -149,10 +145,8 @@ header {
 	flex-flow: row wrap;
 	align-content: space-between;
 	justify-content: space-between;
-/*	padding-top: .5em;
-	padding-bottom: .5em;*/
 	width: 100%;
-	height: 110px;
+	height: 100px;
 	z-index: 999;
 	border: 1px solid #d7d7d7;
 	background-color: #f4f4f4;
@@ -168,15 +162,17 @@ header {
 
 .logo {
 	justify-content: flex-start;
-	flex: 0 1 25%;
+	flex: 0 1 40%;
 	order: 1;
 	align-self: center;
 }
 
 
 .cart {
-	flex: 0 1 15%;
+	flex: 0 1 50%;
 	order: 2;
+	align-self: flex-end;
+	padding-left: 6rem;
 }
 
 nav {
@@ -188,13 +184,14 @@ nav {
 	order: 3;
 	flex: 0 1 100%;
 	font-family: 'Raleway-Medium';
+	overflow: 100px;
 }
 
 .main-nav a {
 	padding: 10px 10px;
 	text-transform: uppercase;
 	color: #e2574c;
-	font-size: 1rem;
+	font-size: 0.875rem;
 	text-decoration: none;
 }
 
@@ -202,56 +199,52 @@ nav {
 	color: #b64036;
 }
 
+.container {
+	padding-top: 70px;
+	margin-top: -70px;
+
+}
+
 /* ---------- Hero Image Container ---------- */
-.hero-image {
+
+div.hero-image {
 	/*border: 1px solid red;*/
 	background: linear-gradient(rgba(0, 0, 0, 0), 
 							rgba(0, 0, 0, 0.5)), 
-	url('images/banner-girl.png') no-repeat, url('images/flower-bkgd.jpg');
+	url('images/banner-girl.png') no-repeat, url('images/flower-bkgd.jpg') no-repeat;
 	background-size: cover, 210px 500px;
-	height: 100%;
+	height: 100px;
+	min-height: 100vh;
 	width: 100%;
-	min-height: 100%;
-	min-width: 100%;
 	background-position: center, bottom;
 	z-index: 100;
-}	
-
-.flex-center {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-}
-
-.hero-text {
-	position: relative;
-	top: 40%;
-	bottom: 40%;
-	min-height: 100%;
-	min-width: 100%;
-	color: white;
-	margin: 0px auto;
-}
-
-.hero-text h3 {
-	/*border: 1px solid black;*/
-	font-size: 1.25rem;
-	text-transform: uppercase;
 	text-align: center;
-	margin: 0 auto;
-	text-shadow: 4px 2px 6px #6f6f6f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div.hero-text {
+	color: white;
+	padding-top: 5rem;
+}
+
+div.hero-text h3 {
+	/*border: 1px solid black;*/
+	font-size: 1rem;
+	text-transform: uppercase;
+	text-shadow: 1px 0px 2px #6f6f6f;
 	font-family: 'Raleway-Medium';
 	font-weight: bold;
+	padding-bottom: 10px;
 }
 
-.hero-text h1 {
-	font-size: 4.25rem;
+div.hero-text h1 {
+	font-size: 2rem;
 	font-family: "PlayfairDisplay-Regular";
-	margin: 0 auto;
-	text-align: center;
-	text-shadow: 3px 2px 6px #6f6f6f;
-	font-weight: normal;
+	text-shadow: 0px 1px 2px #6f6f6f;
+	font-weight: lighter;
+
 }
 
 /* -------- Bio Text Container ---------- */
@@ -261,18 +254,25 @@ nav {
 	flex-direction: column;
 	margin: 0 auto;
 	height: 100%;
+	padding-top: 50px;
+	padding-bottom: 40px;
 }
 
-	.bio-text h2 {
-		font-size: 30px;
-		padding: 20px;
-		font-weight: lighter;
+.bio-text h2 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.bio-text h2 em {
+	font-family: 'PlayfairDisplay-Italic';
+	font-weight: lighter;
 }
 
 	.bio-text p {
-		font-family: "Raleway-LightItalic";
+		font-family: "Raleway-Light";
 		padding: 10px;
-		font-size: 1rem;
+		font-size: 0.825rem;
+		line-height: 2rem;
 }
 
 /* --------- Gallery - Flexbox ---------- */
@@ -286,8 +286,9 @@ nav {
 	/* FLEX */
 	display: flex;
 	flex-flow: row wrap;
-	text-align: center;
 	text-transform: uppercase;
+	padding-top: 70px;
+	margin-top: -70px;
 }
 
 .gallery-cell {
@@ -295,11 +296,10 @@ nav {
 	text-shadow: 0px 1px 3px #2d2d2d;
 	font-weight: normal;
 	color: #fff;
-	justify-content: center;
 	align-items: center;
 	display: flex;
 	margin: 0 auto;
-	transition: transform .2s;
+	justify-content: space-around;
 }
 
 
@@ -307,19 +307,18 @@ nav {
 .gallery-cell:first-child, .gallery-cell:last-child {
 	height: 200px;
 	flex: 0 1 100%;
+	flex-grow: 1;
+	flex-shrink: 2;
+	justify-content: space-around;
 }
 
 .gallery-cell:nth-child(2), .gallery-cell:nth-child(3),
 .gallery-cell:nth-child(4), .gallery-cell:nth-child(5) {
-	height: 200px;
+	height: 12rem;
 	flex: 0 1 40%;
 	flex-grow: 1;
 	justify-content: space-around;
-	margin: 1px 1px;
-}
-
-.gallery-cell:first-child:hover {
-	transition: scale(1.5);
+	margin: 4px;
 }
 
 /* --- Individual Gallary Cell Targets --- */
@@ -329,6 +328,7 @@ nav {
 							rgba(0, 0, 0, 0.2)), url('images/mens-category.jpg');
 	background-size: cover;
 	order: 1;
+	background-position: center;
 }
 
 /* Trends-Cell */
@@ -358,7 +358,7 @@ nav {
 /* Bags-Cell */
 .gallery-cell:nth-child(5) {
 	background: linear-gradient(rgba(0, 0, 0, 0.2), 
-							rgba(0, 0, 0, 0.2)), url('images/bags-category.jpg');
+							rgba(0, 0, 0, 0.2)), url('images/bags-category.jpg') no-repeat;
 	background-size: cover;
 	order: 5;
 }
@@ -376,19 +376,50 @@ nav {
 /* ---------- Most-Loved Container ---------- */
 
 .most-loved {
+	display: flex;
 	text-align: center;
+	justify-content: center;
+	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: row;
-}
-
-.item-category, .item-price {
-	text-transform: uppercase;
-	color: #969696;
-	font-family: 'Raleway-MediumItalic';
+	font-family: 'PlayfairDisplay-Italic';
 	font-weight: lighter;
+	height: 100px;
 }
 
-.item-name {
+.carousel-cell {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  justify-content: center;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  font-size: 80px
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-cell img {
+	align-self: center;
+}
+
+.carousel-cell p {
+	text-align: center;
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 0.75rem;
+}
+
+.carousel-cell h3 {
+	text-align: center;
 	color: #e2574c;
 }
 
@@ -423,14 +454,11 @@ nav {
 .input-group-field {
 	background-color: #fff;
 }
-/* Sign Up Button */
-.button {
+/* Sign Up Button */.button {
   margin-bottom: 0;
   background-color: #e2574c;
   width: 70px;
-
 }
-
 /* ---------- Footer Container ---------- */
 .footer-flex {
 	background-color: #242424;
@@ -467,7 +495,7 @@ nav {
 	margin: 0 auto;
 	padding: 1rem;
 	order: 5;
-	width: 300px;
+	width: 10rem;
 	justify-content: space-evenly;
 	font-size: 1rem;
 }
