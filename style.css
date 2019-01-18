@@ -462,15 +462,15 @@ h3.item-name {
 /* ---------- Sign-Up Container ----------- */
 .sign-up {
 	background: url('images/wave-bkgd.jpg');
-	background-size: 350%;
+	background-size: 330%;
 	background-position: bottom;
 	width: 100%;
 	height: auto;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+	padding: 30px 10px;
 	text-align: center;
 	color: #fff;
 	margin-bottom: 10px;
+
 }
 
 .sign-up h2 {
@@ -481,6 +481,7 @@ h3.item-name {
 
 .sign-up h2 em {
 	font-family: "PlayfairDisplay-Italic";
+	font-weight: lighter;
 }
 
 .input-area {
@@ -533,7 +534,7 @@ h3.item-name {
 	align-content: center;
 	text-align: center;
 	padding-top: 50px;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 	font-weight: bold;
 
 }
