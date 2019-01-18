@@ -16,6 +16,8 @@
 	<!-- Font Awesome CDN -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
+	<!-- Test JS --> 
+
 	<!-- Flickity CDN CSS -->
 		<link rel="stylesheet" href="flickity.css" type="text/css" />
 	</head>
@@ -71,8 +73,8 @@
 
 <!-- Most-Loved Container -->
 	<section class="container" id="featured">
-		<h2 class="most-loved"><em>Hand-Crafted</em> <strong>Styles</strong></h2>
-		<div class="carousel" data-flickity>
+		<h2 class="most-loved"><em>Most-Loved</em> <strong>Products</strong></h2>
+		<div class="carousel" data-flickity='{ "wrapAround": true }' >
 			  <div class="carousel-cell">
 			  	<img src="images/checked-stretch-dress.jpg" alt="Image of Checked Stretch Dress"/>
 			  	<p>Dresses</p>
@@ -103,7 +105,7 @@
 
 			  <div class="carousel-cell">
 			  	<img src="images/demin-overall-shorts.jpg" alt="Image of demin overall shorts" />
-			  	<p>Dresses<p>
+			  	<p>Dresses</p>
 			  	<h3 class="item-name">Demin Overall Shorts</h3>
 			  	<p>$100.00</p>
 			  </div>
@@ -136,12 +138,12 @@
 <!-- Sign Up Container -->
 	<section class="container" id="updates">
 		<div class="sign-up">
+			<!-- Sign Up Button -->
+			<form>
 			<h2>
 					<em>Sign Up for</em> <strong>Updates</strong>
 				</h2>
 			<p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubcribe at any time.</p>
-			<!-- Sign Up Button -->
-			<form>
 				<div class="input-area">
 				      <input class="input-group-field" type="email" placeholder="Your Email" required>
 				      <button class="button">Subscribe</button>
@@ -183,6 +185,14 @@
 			</div>
 </footer>
 	</section>
+		<!-- jQuery CDN -->
+		<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+		<!-- Flickity jQuery CDN -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script type="text/javascript" src="test.js"></script>
+
 		<!-- Smooth Scroll (that is that smooth) --> 
 		<script src="smoothscroll.js"></script>
 
@@ -191,10 +201,6 @@
 		<!-- Flickity JavaScript CDN -->
 		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-		<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-
-		<!-- Flickity jQuery CDN -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 </body>

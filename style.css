@@ -163,6 +163,7 @@ header {
 	flex: 0 1 40%;
 	order: 1;
 	align-self: center;
+	padding-left: 5px;
 }
 
 
@@ -210,7 +211,7 @@ div.hero-image {
 	background: linear-gradient(rgba(0, 0, 0, 0), 
 							rgba(0, 0, 0, 0.5)), 
 	url('images/banner-girl.png') no-repeat, url('images/flower-bkgd.jpg') no-repeat;
-	background-size: cover, 210px 500px;
+	background-size: cover, 175px 450px;
 	height: 100px;
 	min-height: 100vh;
 	width: 100%;
@@ -242,6 +243,7 @@ div.hero-text h1 {
 	font-family: "PlayfairDisplay-Regular";
 	text-shadow: 0px 1px 2px #6f6f6f;
 	font-weight: lighter;
+	margin-top: 20px;
 
 }
 
@@ -259,6 +261,7 @@ div.hero-text h1 {
 .bio-text h2 {
 	font-size: 1.5rem;
 	line-height: 2rem;
+	padding: 10px;
 }
 
 .bio-text h2 em {
@@ -459,11 +462,12 @@ h3.item-name {
 /* ---------- Sign-Up Container ----------- */
 .sign-up {
 	background: url('images/wave-bkgd.jpg');
-	background-size: cover;
+	background-size: 350%;
+	background-position: bottom;
 	width: 100%;
-	height: 20rem;
-	padding: 2rem;
-	border-radius: 0;
+	height: auto;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
 	text-align: center;
 	color: #fff;
 	margin-bottom: 10px;
@@ -480,23 +484,44 @@ h3.item-name {
 }
 
 .input-area {
-	background-color: #fff;
-	width: 15rem;
 	display: inline-flex;
 	justify-content: space-between;
-	margin: 4rem auto;
-
+	background-color: #fff;
+	width: 80%;
+	height: 30px;
+	margin: 2rem auto;
+	border-radius: 20px;
 }
 
 /* Input field for Sign Up */
 .input-group-field {
-	background-color: #fff;
+	padding-left: 20px;
+	border: none;
+	border-radius: 20px;
 }
-/* Sign Up Button */.button {
+
+.input-group-field::placeholder {
+	color: #969696;
+	font-family: "Raleway-Light";
+	padding-left: 
+}
+
+/* Sign Up Button */
+.button {
   margin-bottom: 0;
   background-color: #e2574c;
-  width: 70px;
+  width: 90px;
+  font-weight: bold;
+  color: #fff;
+  height: auto;
+  margin: 2px;
+  border-radius: 20px;
+  text-align: center;
+  font-family: "Raleway-Light";
 }
+
+
+
 /* ---------- Footer Container ---------- */
 .footer-flex {
 	background-color: #242424;
@@ -508,7 +533,7 @@ h3.item-name {
 	align-content: center;
 	text-align: center;
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	font-weight: bold;
 
 }
@@ -533,11 +558,12 @@ h3.item-name {
 	flex-direction: row;
 	list-style: none;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 20px 10px;
 	order: 5;
 	width: 50%;
 	justify-content: space-between;
 	font-size: 1rem;
+	line-height: 3;
 }
 
 /* Facebook Icon & Color Hover */
@@ -591,5 +617,5 @@ h3.item-name {
 .social-google:hover {
 	color: #db4a39;
 }
-
+}
 
