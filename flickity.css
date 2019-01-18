@@ -112,10 +112,11 @@ https://flickity.metafizzy.co
 .flickity-page-dots {
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin-bottom: 20px;
+
   list-style: none;
   text-align: center;
-  line-height: 1;
+  line-height: 2;
 }
 
 .flickity-rtl .flickity-page-dots { direction: rtl; }
