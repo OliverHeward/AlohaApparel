@@ -124,15 +124,6 @@ body, html {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'PlayfairDisplay-Bold';
-	font-size: 1.275rem;
-
-
-}
-
-p {
-	font-family: 'Raleway-Light';
-	font-size: 1rem;
-	line-height: 1.6;
 }
 
 /* ----- NAV Section ----- */
@@ -230,17 +221,12 @@ div.hero-text {
 
 div.hero-text h3 {
 	/*border: 1px solid black;*/
-	font-size: 1rem;
-	text-transform: uppercase;
 	text-shadow: 1px 0px 2px #6f6f6f;
-	font-family: 'Raleway-Medium';
-	font-weight: bold;
-	padding-bottom: 10px;
+	font-family: 'Raleway-Light';
+	margin-top: 20px;
 }
 
 div.hero-text h1 {
-	font-size: 2rem;
-	font-family: "PlayfairDisplay-Regular";
 	text-shadow: 0px 1px 2px #6f6f6f;
 	font-weight: lighter;
 	margin-top: 20px;
@@ -259,7 +245,6 @@ div.hero-text h1 {
 }
 
 .bio-text h2 {
-	font-size: 1.5rem;
 	line-height: 2rem;
 	padding: 10px;
 }
@@ -267,13 +252,6 @@ div.hero-text h1 {
 .bio-text h2 em {
 	font-family: 'PlayfairDisplay-Italic';
 	font-weight: lighter;
-}
-
-	.bio-text p {
-		font-family: "Raleway-Light";
-		padding: 10px;
-		font-size: 0.825rem;
-		line-height: 2rem;
 }
 
 /* --------- Gallery - Flexbox ---------- */
@@ -389,18 +367,20 @@ div.hero-text h1 {
 }*/
 
 h2.most-loved {
-	font-size: 1.75rem;
-	text-align: center;
 	align-items: center;
 	padding-top: 50px;
 	padding-bottom: 40px;
 }
 
-h2.most-loved em {
+h2.most-loved {
 	font-family: 'PlayfairDisplay-Italic';
 	font-weight: lighter;
 }
 
+strong.strong {
+	font-weight: bold;
+	font-family: 'PlayfairDisplay-Bold';
+}
 /*h2.most-loved em {
 	margin-right: 10px;
 }*/
@@ -442,16 +422,14 @@ div.carousel {
 }
 
 .carousel-cell p {
-	text-align: center;
 	padding: 10px;
 	text-transform: uppercase;
-	font-size: 0.75rem;
 	font-family: "Raleway-Medium";
 	font-weight: bold;
 	color: #969696;
 }
 
-h3.item-name {
+h4.item-name {
 	text-align: center;
 	color: #e2574c;
 	font-size: 1.5rem;
@@ -476,10 +454,6 @@ h3.item-name {
 .sign-up h2 {
 	text-shadow: 0px 1px 1px #2d2d2d;
 	padding: 1rem;
-	font-size: 1.6rem;
-}
-
-.sign-up h2 em {
 	font-family: "PlayfairDisplay-Italic";
 	font-weight: lighter;
 }
