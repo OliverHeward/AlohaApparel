@@ -2,6 +2,8 @@
 https://flickity.metafizzy.co
 ---------------------------------------------- */
 
+@media screen and (min-width: 320px) {
+
 .flickity-enabled {
   position: relative;
 }
@@ -134,4 +136,5 @@ https://flickity.metafizzy.co
 
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
+}
 }
