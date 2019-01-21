@@ -681,6 +681,13 @@
         justify-content: space-around;
     }
 
+	/*most-loved*/
+
+	h2.most-loved {
+		font-size: 2em;
+	}
+
+
     /*Carousel Tablet View*/
 
     .carousel-cell {
@@ -697,6 +704,7 @@
     .sign-up h2 {
         margin-bottom: 0;
         padding-bottom: 25px;
+        font-size: 2em;
     }
 
     .sign-up p {
