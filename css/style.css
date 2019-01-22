@@ -302,7 +302,7 @@
         -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
         flex-flow: row wrap;
-        width: 450px;
+        width: 100%;
     }
 
     /* -------- Bio Text Container ---------- */
@@ -628,11 +628,10 @@
         font-family: "PlayfairDisplay-Italic", serif;
         font-weight: lighter;
         padding-top: 35px;
-        margin-bottom: 35px;
+        margin-bottom: 15px;
     }
 
     .sign-up p {
-        font-size: 1.1em;
         line-height: 30px;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -853,7 +852,7 @@
 
     div.hero-text h1 {
         font-size: 3rem;
-        width: 700px;
+        width: 100%;
         margin-top: 0;
     }
 
