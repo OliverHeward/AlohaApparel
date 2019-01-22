@@ -1,8 +1,8 @@
 var itemCount = 0;
 
-$('.add').click(function (){
+$('.buy-button').click(function (){
   itemCount ++;
-  $('#itemCount').html(itemCount).css('display', 'block');
+  $('.cart').html(itemCount).css('display', 'block');
 }); 
 
 $('.clear').click(function() {
