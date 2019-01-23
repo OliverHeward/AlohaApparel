@@ -1,12 +1,4 @@
-var itemCount = 0;
-
-$('.buy-button').click(function (){
-  itemCount ++;
-  $('.cart').html(itemCount).css('display', 'block');
-}); 
-
-$('.clear').click(function() {
-  itemCount = 0;
-  $('#itemCount').html('').css('display', 'none');
-  $('#cartItems').html('');
-}); 
+$('.buy-button').parent('button').click(function() {
+     var count = parseInt($('.inc').text())++1;
+     $('.inc').text(count);
+ });
