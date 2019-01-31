@@ -266,7 +266,7 @@
             rgba(0, 0, 0, 0.5)),
             url('../images/banner-girl.png') no-repeat, url('../images/flower-bkgd.jpg');
         background-size: cover, 200px 475px;
-        height: 650px;
+        height: 700px;
         width: 100%;
         background-position: center, bottom;
         z-index: 100;
@@ -1089,14 +1089,14 @@
 
     .gallery-cell:first-child,
     .gallery-cell:last-child {
-        height: 250px;
+        height: 300px;
     }
 
     .gallery-cell:nth-child(2),
     .gallery-cell:nth-child(3),
     .gallery-cell:nth-child(4),
     .gallery-cell:nth-child(5) {
-        height: 250px;
+        height: 300px;
     }
 
     /* Carousel */
