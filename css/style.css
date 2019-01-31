@@ -242,7 +242,7 @@
     .main-nav>span:hover {
         color: #b64036;
     }
-
+    /* Container reset for smooth scroll */
     .container {
         padding-top: 70px;
         margin-top: -70px;
