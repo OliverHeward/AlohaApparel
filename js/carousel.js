@@ -14,11 +14,10 @@
 
 })(jQuery)
 
+var counter = 0;
+
 $(function() {
-
-
     $(".buy-button").click(function() {
-    	var counter = 0;
         counter++;
 
         $("#cart-counter").text(counter);
