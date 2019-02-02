@@ -218,9 +218,15 @@
         background-color: red;
         color: #fff;
         width: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         height: 20px;
         border-radius: 10px;
     }
@@ -440,6 +446,10 @@
             rgba(0, 0, 0, 0.2)), url('../images/mens-category.jpg');
         background: -o-linear-gradient(rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.2)), url('../images/mens-category.jpg');
+        background: -webkit-gradient(linear,
+            left top, left bottom,
+            from(rgba(0, 0, 0, 0.2)),
+            to(rgba(0, 0, 0, 0.2))), url('../images/mens-category.jpg');
         background: linear-gradient(rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.2)), url('../images/mens-category.jpg');
         background-size: cover;
@@ -841,7 +851,9 @@
     }
 
     .cart-container {
-        order: 3;
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
         position: relative;
         width: 100px;
         height: 55px;
