@@ -7,6 +7,7 @@
 >* JavaScript / jQuery - (Smooth Scroll, Click Event, Flickity)
 
 ## *Changelog*
+>* 2-Feb-2019 : Cart Increment Added and Made Responsive
 >* 23-Jan-2019 : Final Push and Tidy Up
 >* 22-Jan-2019 : Desktop Response Repo Push
 >* 21-Jan-2019 : Tablet Response Repo Push
