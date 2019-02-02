@@ -222,11 +222,11 @@
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         height: 20px;
         border-radius: 10px;
     }
@@ -852,8 +852,8 @@
 
     .cart-container {
         -webkit-box-ordinal-group: 4;
-            -ms-flex-order: 3;
-                order: 3;
+        -ms-flex-order: 3;
+        order: 3;
         position: relative;
         width: 100px;
         height: 55px;
