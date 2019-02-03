@@ -48,6 +48,10 @@ https://flickity.metafizzy.co
 /* ---- flickity-button ---- */
 
 .flickity-button {
+  display: none;
+}
+
+/*.flickity-button {
   position: absolute;
   background: hsla(0, 0%, 100%, 0.75);
   border: none;
@@ -72,12 +76,12 @@ https://flickity.metafizzy.co
   opacity: 0.3;
   cursor: auto;
   /* prevent disabled button from capturing pointer up event. #716 */
-  pointer-events: none;
+/*  pointer-events: none;
 }
 
 .flickity-button-icon {
   fill: #333;
-}
+}*/
 
 /* ---- page dots ---- */
 
